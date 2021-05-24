@@ -8,7 +8,6 @@ import java.awt.event.MouseListener;
 public class Panel2 extends JPanel implements MouseListener {
     public Panel2(){
         addMouseListener(this);
-        this.setPreferredSize(new Dimension(800,600));
     }
     @Override
     public void paintComponent(Graphics g){
@@ -22,7 +21,6 @@ public class Panel2 extends JPanel implements MouseListener {
         this.setVisible(false);
         Shared.panel1.setVisible(true);
         System.out.println(Shared.panel1.isVisible());
-        Shared.panel1.repaint();
     }
 
     @Override
